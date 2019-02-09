@@ -1,0 +1,82 @@
+*,
+::before,
+::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html{ height: 100%; }
+
+body{
+  background: rgb(25, 25, 25);
+  font-family: "Roboto", sans-serif;
+}
+
+ul{ list-style: none; }
+
+.container{ 
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  margin: auto;
+}
+
+/* ### Icones ### */
+.icone::before{
+  padding-right: 10px;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icone span{ 
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.instagram, 
+.behance,
+.dribbble,
+.github,
+.email,
+.whatsapp{
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  color: rgb(58, 165, 211); 
+  text-decoration: none;
+}
+
+.instagram::before{ content: "\f16d"; } 
+.behance::before{ content: "\f1b5"; }
+.dribbble::before{ content: "\f397"; }
+.github::before{ content: "\f092"; }
+.email::before{ content: "\f0e0";  }
+.whatsapp::before{ content: "\f232";  }
+
+/* ### Códigos do cabeçalho ### */
+header.container{
+  align-items: center;
+  padding: 20px;
+}
+
+@media(min-width: 600px){
+  header.container{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.menu{ padding: 10px; }
+
+.menu-item{
+  display: inline-block;
+  font-size: 2em;
+}
+
+.logo{ max-width: 250px; }
+@media(min-width: 600px){
+  .logo{ max-width: 150px; }
+}
