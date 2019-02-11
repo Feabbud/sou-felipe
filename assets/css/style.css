@@ -20,13 +20,13 @@ ul{ list-style: none; }
 .container{ 
   display: flex;
   flex-direction: column;
-  max-width: 1024px;
-  margin: auto;
 }
 
 .all{ 
+  justify-content: space-between;
+  margin: auto;
   padding: 20px;
-  justify-content: center;
+  max-width: 1024px;
 }
 
 /* ### Icones ### */
