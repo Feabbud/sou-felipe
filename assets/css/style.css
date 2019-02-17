@@ -56,9 +56,9 @@ ul{ list-style: none; }
 }
 
 .instagram::before{ content: "\f16d"; } 
-.behance::before{ content: "\f1b5"; }
-.dribbble::before{ content: "\f397"; }
-.github::before{ content: "\f092"; }
+.behance::before{ content: "\f1b4"; }
+.dribbble::before{ content: "\f17d"; }
+.github::before{ content: "\f09b"; }
 .email::before{ content: "\f0e0";  }
 .whatsapp::before{ content: "\f232";  }
 
@@ -90,8 +90,32 @@ header.container{
 /* ### Códigos da seção principal ### */
 p{ color: rgb(255, 255, 255);} 
 
+@media(min-width: 520px){
+ p{ font-size: 1.3em;}
+}
+
 h1{
   font-size: 1.7em;
   text-transform: uppercase;
   color: rgb(58, 165, 211);
+}
+
+@media(min-width: 415px){
+  h1{ font-size: 2em;}
+}
+
+@media(min-width: 510px){
+  h1{ font-size: 2.5em;}
+}
+
+@media(min-width: 600px){
+  h1{ font-size: 3em;}
+}
+
+@media(min-width: 690px){
+  h1{ font-size: 3.5em;}
+}
+
+@media(min-width: 800px){
+  h1{ font-size: 4em;}
 }
