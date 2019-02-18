@@ -17,6 +17,8 @@ body{
 
 ul{ list-style: none; }
 
+p{ color: rgb(255, 255, 255);}
+
 .container{ 
   display: flex;
   flex-direction: column;
@@ -47,9 +49,15 @@ ul{ list-style: none; }
 .behance,
 .dribbble,
 .github,
-.email,
 .whatsapp{
   font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  color: rgb(58, 165, 211); 
+  text-decoration: none;
+}
+
+.email{
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: rgb(58, 165, 211); 
   text-decoration: none;
@@ -88,15 +96,22 @@ header.container{
 }
 
 /* ### Códigos da seção principal ### */
-p{ color: rgb(255, 255, 255);} 
+main{ 
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main p{ 
+  padding-top: 10px; 
+  padding-bottom: 10px;
+} 
 
 @media(min-width: 520px){
- p{ font-size: 1.3em;}
+  main p{ font-size: 1.3em;}
 }
 
 h1{
   font-size: 1.7em;
-  text-transform: uppercase;
   color: rgb(58, 165, 211);
 }
 
@@ -119,3 +134,41 @@ h1{
 @media(min-width: 800px){
   h1{ font-size: 4em;}
 }
+/* ### Códigos da seção rodape ### */
+@media(min-width: 470px) and (max-width: 549px){
+  address ul{ width: 55%; }
+}
+
+@media(min-width: 470px){
+  address.container{ align-items: center;}
+}
+
+@media(min-width: 700px){
+  address ul{ 
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  span.icone{ 
+    font-size: 3.2em;
+    padding-right: 10px;
+  }
+}
+
+@media(min-width: 700px){
+  address ul{ width: 70%; }
+}
+
+li.container{
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+span.icone{ font-size: 2.5em; }
+
+.titulo{
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.texto{}
